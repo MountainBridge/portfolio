@@ -6,15 +6,14 @@ import reportWebVitals from './reportWebVitals';
 //adind state to our component using React hooks
 
 function App(){
-  console.log(useState);
-  //below const destructures to get the state variable = 'status' and function used to change the status = 'setStatus'
-  const [status, setStatus] = useState("Not delivered");
+
+const [checked, setChecked]= useState(false);
  return(
    <div>
-   <h1>The package is: {status}</h1>
-   <button onClick = {() => setStatus('Delivered')}>
-   Deliver
-   </button>
+   <input type = "checkbox" value = {checked}
+   onChange = {()=>
+    setChecked((checked) => !checked)}/>
+   <p> {checked? 'checked' : 'unchecked'}</p>
    </div>
  )
 }
