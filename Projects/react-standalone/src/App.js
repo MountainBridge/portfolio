@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import Button from '@mui/material/Button';
-function App() {
+function App(props) {
   return (
     <div className="App">
-    <Button variant="contained">Hello Nidhi</Button>
+    <Button variant="contained">Hello {props.name} !</Button>
     </div>
   );
 }
