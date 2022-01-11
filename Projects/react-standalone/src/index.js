@@ -2,20 +2,19 @@ import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import { FaStar } from 'react-icons/fa';
 
-//adind state to our component using React hooks
+const createArray = (length) => [...Array(length)];
 
+function Star(){
+  return <FaStar/>
+}
+
+function StarRating(){
+  return createArray(5).map((n,i) => (<Star key={i}/>));
+}
 function App(){
-
-const [checked, setChecked]= useState(false);
- return(
-   <div>
-   <input type = "checkbox" value = {checked}
-   onChange = {()=>
-    setChecked((checked) => !checked)}/>
-   <p> {checked? 'checked' : 'unchecked'}</p>
-   </div>
- )
+  return <StarRating/>
 }
 
 ReactDOM.render(
