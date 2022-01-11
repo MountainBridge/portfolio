@@ -1,12 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+//adind state to our component using React hooks
+function App(){
+  console.log(useState);
+  const [status] = useState("Not delivered");
+ return(
+   <div>The package is: {status}</div>
+ )
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App name="Nidhi"/>
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
