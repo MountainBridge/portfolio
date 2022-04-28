@@ -63,10 +63,15 @@ export default function CustomImageList() {
 
 const itemData = [
   {
-    img: '/assets/beach_sunset.png'
+    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+    title: 'Breakfast',
+    author: '@bkristastucchio',
+    featured: true,
   },
   {
-    img: '/assets/car_classy.png'
+    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+    title: 'Burger',
+    author: '@rollelflex_graphy726',
   },
   {
     img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',

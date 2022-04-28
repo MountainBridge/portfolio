@@ -13,7 +13,7 @@ import Cloud from '@mui/icons-material/Cloud';
 
 export default function SideNav() {
   return (
-    <Paper sx={{ width: 320, maxWidth: '100%' }}>
+    <Paper sx={{ width: 320, maxWidth: '100%', background: 'black', color:'white', textAlign: 'left'}}>
       <MenuList>
         <MenuItem>
           <ListItemIcon>
