@@ -1,10 +1,9 @@
+import './gottolove.css';
+
 function Closures() {
   return (
-    <div className="Closures" id="Closures">
-      <header className="App-header">
-        <p class="font">
-        <b>Closures</b></p>
-      </header>
+    <div class="card" id="Closures">
+        <p>Closures</p>
     </div>
   );
 }

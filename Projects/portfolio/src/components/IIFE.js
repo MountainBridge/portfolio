@@ -1,10 +1,9 @@
+import './gottolove.css';
+
 function IIFE() {
   return (
-    <div className="IIFE" id="IIFE">
-      <header className="App-header">
-        <p class="font">
-        <b>IIFE</b></p>
-      </header>
+    <div class="card" id="IIFE">
+        <p>IIFE</p>
     </div>
   );
 }

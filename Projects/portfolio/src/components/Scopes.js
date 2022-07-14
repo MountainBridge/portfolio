@@ -1,10 +1,9 @@
+import './gottolove.css';
+
 function Scopes() {
   return (
-    <div className="Scopes" id="Scopes">
-      <header className="App-header">
-        <p class="font">
-        <b>Scopes</b></p>
-      </header>
+    <div class="card" id="Scopes">
+        <p>Scopes</p>
     </div>
   );
 }
