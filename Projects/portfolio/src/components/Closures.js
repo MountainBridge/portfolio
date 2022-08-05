@@ -1,4 +1,4 @@
-import './gottolove.css';
+import './cards.css';
 
 function Closures() {
   return (
